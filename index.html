@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Redolent Fragrances – Elegant fragrances and custom blends." />
+    <meta name="theme-color" content="#C7B59B" />
+    <title>Redolent Fragrances — Template</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#" aria-label="Redolent Fragrances home">
+          <!-- Replace src when logo asset exists -->
+          <img class="brand__logo" src="assets/logo/rf-logo-primary.svg" alt="" aria-hidden="true" />
+          <span class="brand__name">Redolent Fragrances</span>
+        </a>
+
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <form class="site-search" role="search" aria-label="Site search">
+          <input type="search" name="q" placeholder="Search fragrances" aria-label="Search" />
+          <button type="submit" class="btn btn--accent">Search</button>
+        </form>
+
+        <a href="#cart" class="cart" aria-label="View cart">
+          <span class="cart__icon" aria-hidden="true">🛒</span>
+          <span class="cart__count" data-cart-count>0</span>
+        </a>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <h1 id="hero-title">Discover Your Signature Scent</h1>
+            <p>Curated fragrances and custom blends for every mood and moment.</p>
+            <a href="#shop" class="btn btn--primary">Shop Now</a>
+          </div>
+          <div class="hero__media" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <!-- Featured Products -->
+      <section id="shop" class="section products" aria-labelledby="feat-title">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="feat-title">Featured Fragrances</h2>
+            <a class="link" href="#">View all</a>
+          </div>
+          <div class="product-grid">
+            <!-- Card 1 -->
+            <article class="product-card">
+              <div class="product-card__media_1" role="img" aria-label="Amber Blossom bottle image placeholder"></div>
+              <h3 class="product-card__title">Amber Blossom</h3>
+              <p class="product-card__price">$79.00</p>
+              <button class="btn btn--secondary" data-add-to-cart>Add to Cart</button>
+            </article>
+            <!-- Card 2 -->
+            <article class="product-card">
+              <div class="product-card__media_2" role="img" aria-label="Spice Noir bottle image placeholder"></div>
+              <h3 class="product-card__title">Spice Noir</h3>
+              <p class="product-card__price">$89.00</p>
+              <button class="btn btn--secondary" data-add-to-cart>Add to Cart</button>
+            </article>
+            <!-- Card 3 -->
+            <article class="product-card">
+              <div class="product-card__media_3" role="img" aria-label="Rose Velvet bottle image placeholder"></div>
+              <h3 class="product-card__title">Rose Velvet</h3>
+              <p class="product-card__price">$69.00</p>
+              <button class="btn btn--secondary" data-add-to-cart>Add to Cart</button>
+            </article>
+            <!-- Card 4 -->
+            <article class="product-card">
+              <div class="product-card__media_4" role="img" aria-label="Citrus Muse bottle image placeholder"></div>
+              <h3 class="product-card__title">Citrus Muse</h3>
+              <p class="product-card__price">$59.00</p>
+              <button class="btn btn--secondary" data-add-to-cart>Add to Cart</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="section newsletter" aria-labelledby="nl-title">
+        <div class="container">
+          <h2 id="nl-title">Join our newsletter</h2>
+          <form class="newsletter__form" data-newsletter-form>
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required />
+            <button type="submit" class="btn btn--accent">Sign Up</button>
+          </form>
+          <p class="newsletter__note">Get 10% off your first order.</p>
+          <p class="newsletter__feedback" role="status" aria-live="polite" hidden></p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container footer-inner">
+        <div class="footer__brand">
+          <div class="brand brand--footer">
+            <img class="brand__logo" src="assets/logo/rf-logomark.svg" alt="" aria-hidden="true" />
+            <span class="brand__name">Redolent Fragrances</span>
+          </div>
+          <p class="footer__copy">© 2025 Redolent Fragrances. All rights reserved.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer">
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </nav>
+        <div class="footer__social" aria-label="Social">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Pinterest">Pin</a>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="./main.js"></script>
+  </body>
+  </html>
