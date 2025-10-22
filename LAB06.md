@@ -742,7 +742,12 @@ Conventions used below
     - Sections: Featured Products, Best Sellers, Categories, Newsletter CTA
     - Button copy: Shop Now, View All, Add to Cart, Read More, Sign Up
 - Images
-    - /assets/images/hero/rf-hero-fall-2025.jpg — alt: "Perfume bottles on marble with soft light"
+    - assets/images/hero/perfume-autumn-river.svg — alt: "Bottle on leaves beside river"
+    - photo-1541643600914-78b084683601.jpg (1200×1725) — alt: "Pink perfume bottle with chanel no 5 on it"
+    - photo-1613415959194-0cb09aa135f1.jpg (988×1480) — alt: "Perfume bottle on table with book and leaves"
+    - photo-1588514912908-8f5891714f8d.jpg (2669×1782) — alt: "Black perfume bottle leaning on wood chunks"
+    - photo-1622618991746-fe6004db3a47.jpg (987×1481) — alt: "Three bottles laying on yellow table with sunlight reflecting through"
+    - photo-1519669011783-4eaa95fa1b7d.jpg (979×1499) — alt: "Black background black perfume bottle"
     - /assets/images/products/rf-prod-amber-blossom-01.jpg — alt: "Amber Blossom eau de parfum bottle"
     - /assets/images/products/rf-prod-spice-noir-01.jpg — alt: "Spice Noir fragrance bottle"
     - /assets/images/products/rf-prod-rose-velvet-01.jpg — alt: "Rose Velvet fragrance bottle"
@@ -766,6 +771,9 @@ Conventions used below
 - Images
     - Product thumbnails: /assets/images/products/rf-prod-<slug>-01.jpg (primary), -02.jpg (alt angle)
     - Category banners (optional): /assets/images/products/rf-cat-<category>.jpg
+    - https://images.unsplash.com/photo-1585218334450-afcf929da36e?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470 — alt: "A black bottle of cologne with a black label reading ‘Coco noir Chanel Paris’ in front of a pink background"
+    - https://images.unsplash.com/photo-1523293182086-7651a899d37f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2070 — alt: "A dark blue bottle of cologne with white text on the front reading ‘Bleu de Chanel eau de parfum’ on a white surface with a light blue background"
+    - https://images.unsplash.com/photo-1698867928110-2408e8e2f44a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1287 — alt: "A black bottle of cologne with drops of liquid all over it and the cap off reading ‘Savage eau de parfum Dior’ with a black smoky background"
 - Videos
     - None for v1
 - Hyperlinks
@@ -803,6 +811,7 @@ Conventions used below
 - Images
     - /assets/images/customizer/rf-customizer-base-notes.png — alt: "Note selection UI"
     - /assets/images/customizer/rf-bottle-styles.png — alt: "Bottle style options"
+    - https://img.freepik.com/free-photo/young-woman-with-beautiful-blond-hair-gentle-smile-dressed-green-robe-with-belt-is-working-greenhouse_197531-12313.jpg — alt: "A woman smelling a plant"
     - Dynamic preview (canvas/image) — alt: "Preview of your custom perfume"
 - Videos
     - None for v1
@@ -820,6 +829,7 @@ Conventions used below
     - Empty state message
 - Images
     - Thumbnails for each item: /assets/images/products/rf-prod-<slug>-thumb.jpg
+    - (Use product images for cart thumbnails; see Shop / Products image list for source URLs)
 - Videos
     - None
 - Hyperlinks
@@ -865,7 +875,7 @@ Conventions used below
     - Profile: name, email, addresses, preferences (note preference, favorites)
     - Order History and Tracking
 - Images
-    - Avatar placeholder: /assets/images/avatars/user-default.png — alt: "User avatar placeholder"
+    - premium_photo-1680347633771-6bc49980bea3.jpg (987×1480) — alt: "Woman spraying herself with perfume"
 - Videos
     - None
 - Hyperlinks
@@ -879,7 +889,7 @@ Conventions used below
     - Mission statement, brand story, values (luxury, intimacy, artistry, etc.)
     - Team bios (short)
 - Images
-    - /assets/images/brand/rf-studio.jpg — alt: "Fragrance studio workspace"
+    - https://plus.unsplash.com/premium_photo-1719813777006-328e62f6e6d8?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=3264 — alt: "Four pink perfume bottles with silver caps, two sitting on a white surface and two floating in the air. White background with pink shadows and a ribbed pink decoration"
     - /assets/images/team/rf-team-01.jpg — alt: "Redolent Fragrances team photo"
 - Videos
     - Optional brand reel: /assets/videos/rf-brand-reel.mp4
@@ -894,6 +904,7 @@ Conventions used below
     - List of posts: title, excerpt, date, tag (Fragrance Tips, Seasonal Trends, Behind the Scenes)
     - Post detail: headings, paragraphs, captions
 - Images
+    - https://i0.wp.com/takeonethingoff.com/wp-content/uploads/2025/02/image-1.jpg?w=1024&ssl=1 — alt: "Collection of Fragrances"
     - /assets/images/blog/rf-blog-<slug>-hero.jpg — alt: "Blog hero image"
     - Inline images per post: rf-blog-<slug>-01.jpg, -02.jpg
 - Videos
@@ -912,7 +923,7 @@ Conventions used below
     - Support email, response time
     - Return policy summary
 - Images
-    - Optional: /assets/images/brand/rf-support.jpg — alt: "Customer support desk"
+    - https://img.freepik.com/free-photo/customer-service-business-contact-concept-wooden-cube-block-which-print-screen-letter-telephone-email-address-message_616485-45.jpg — alt: "Contact Us"
 - Videos
     - None
 - Hyperlinks
