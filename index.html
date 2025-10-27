@@ -18,41 +18,7 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header" role="banner">
-      <div class="container header-inner">
-        <a class="brand" href="#" aria-label="Redolent Fragrances home">
-          <!-- Replace src when logo asset exists -->
-          <img class="brand__logo" src="assets/logo/rf-logo-primary.svg" alt="" aria-hidden="true" />
-          <span class="brand__name">Redolent Fragrances</span>
-        </a>
-
-        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-          <span class="nav-toggle__bar"></span>
-        </button>
-
-        <nav id="primary-nav" class="primary-nav" aria-label="Primary">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <form class="site-search" role="search" aria-label="Site search">
-          <input type="search" name="q" placeholder="Search fragrances" aria-label="Search" />
-          <button type="submit" class="btn btn--accent">Search</button>
-        </form>
-
-        <a href="#cart" class="cart" aria-label="View cart">
-          <span class="cart__icon" aria-hidden="true">🛒</span>
-          <span class="cart__count" data-cart-count>0</span>
-        </a>
-      </div>
-    </header>
+    <div id="site-header"></div>
 
     <main id="main">
       <!-- Hero -->
@@ -146,6 +112,8 @@
       </div>
     </footer>
 
+    <script defer src="./src/cart.js"></script>
+    <script defer src="./src/header.js"></script>
     <script defer src="./main.js"></script>
   </body>
   </html>
