@@ -3,15 +3,22 @@
    The module injects accessible header markup and wires up the nav toggle and cart count.
 */
 (function () {
+  function getBasePath() {
+    // Detect if we're in /pages/ subdirectory or root
+    const path = window.location.pathname;
+    return path.includes('/pages/') ? '../' : './';
+  }
+
   function createHeader() {
+    const base = getBasePath();
     const container = document.createElement('header');
     container.className = 'site-header';
     container.setAttribute('role', 'banner');
 
     container.innerHTML = `
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Redolent Fragrances home">
-          <img class="brand__logo" src="assets/logo/rf-logo-primary.svg" alt="" aria-hidden="true" />
+        <a class="brand" href="${base}index.html" aria-label="Redolent Fragrances home">
+          <img class="brand__logo" src="${base}assets/logo/rf-logo-primary.svg" alt="" aria-hidden="true" />
           <span class="brand__name">Redolent Fragrances</span>
         </a>
 
@@ -23,11 +30,12 @@
 
         <nav id="primary-nav" class="primary-nav" aria-label="Primary">
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="cart.html">Cart</a></li>
+            <li><a href="${base}index.html">Home</a></li>
+            <li><a href="${base}pages/shop.html">Shop</a></li>
+            <li><a href="${base}pages/customizer.html">Customize</a></li>
+            <li><a href="${base}pages/blog.html">Blog</a></li>
+            <li><a href="${base}pages/about.html">About</a></li>
+            <li><a href="${base}pages/contact.html">Contact</a></li>
           </ul>
         </nav>
 
@@ -36,7 +44,7 @@
           <button type="submit" class="btn btn--accent">Search</button>
         </form>
 
-        <a href="cart.html" class="cart" aria-label="View cart">
+        <a href="${base}pages/cart.html" class="cart" aria-label="View cart">
           <span class="cart__icon" aria-hidden="true">🛒</span>
           <span id="cart-count" class="cart__count" aria-live="polite">0</span>
         </a>

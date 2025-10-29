@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Redolent Fragrances</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav>
+        <a href="../index.html" class="logo">Redolent Fragrances</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <div class="container">
+      <h1>Checkout</h1>
+      <form id="checkout-form" class="checkout-form">
+        <section class="shipping-section">
+          <h2>Shipping Information</h2>
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="address" placeholder="Street Address" required>
+          <input type="text" name="city" placeholder="City" required>
+          <input type="text" name="postalCode" placeholder="Postal Code" required>
+        </section>
+        <section class="payment-section">
+          <h2>Payment Information</h2>
+          <p>(Payment gateway integration pending)</p>
+        </section>
+        <button type="submit" class="btn btn-primary">Place Order</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Redolent Fragrances. All rights reserved.</p>
+  </footer>
+
+  <script src="../js/utils/cart.js"></script>
+  <script src="../js/components/checkout.js"></script>
+</body>
+</html>

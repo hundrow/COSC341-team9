@@ -785,11 +785,11 @@ Conventions used below
     - Button copy: Shop Now, View All, Add to Cart, Read More, Sign Up
 - Images
     - assets/images/hero/perfume-autumn-river.svg — alt: "Bottle on leaves beside river"
-    - photo-1541643600914-78b084683601.jpg (1200×1725) — alt: "Pink perfume bottle with chanel no 5 on it"
-    - photo-1613415959194-0cb09aa135f1.jpg (988×1480) — alt: "Perfume bottle on table with book and leaves"
-    - photo-1588514912908-8f5891714f8d.jpg (2669×1782) — alt: "Black perfume bottle leaning on wood chunks"
-    - photo-1622618991746-fe6004db3a47.jpg (987×1481) — alt: "Three bottles laying on yellow table with sunlight reflecting through"
-    - photo-1519669011783-4eaa95fa1b7d.jpg (979×1499) — alt: "Black background black perfume bottle"
+- https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop - alt:”Pink perfume bottle with chanel no 5 on it”
+- https://images.unsplash.com/photo-1613415959194-0cb09aa135f1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=988 - alt:”Perfume bottle on table with book and leaves”
+- https://images.unsplash.com/photo-1588514912908-8f5891714f8d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2669 - alt:”Black perfume bottle leaning on wood chunks”
+- https://images.unsplash.com/photo-1622618991746-fe6004db3a47?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987 - alt:”Three bottles laying on yellow table with sunlight reflecting through”
+- https://images.unsplash.com/photo-1519669011783-4eaa95fa1b7d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=979 - alt:”Black background black perfume bottle”
     - /assets/images/products/rf-prod-amber-blossom-01.jpg — alt: "Amber Blossom eau de parfum bottle"
     - /assets/images/products/rf-prod-spice-noir-01.jpg — alt: "Spice Noir fragrance bottle"
     - /assets/images/products/rf-prod-rose-velvet-01.jpg — alt: "Rose Velvet fragrance bottle"

@@ -1,0 +1,22 @@
+{
+  "name": "redolent-fragrances",
+  "version": "1.0.0",
+  "description": "Redolent Fragrances - A modern e-commerce platform for perfumes",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 5500",
+    "lint": "eslint \"public/**/*.js\" \"public/js/**/*.js\"",
+    "lint:fix": "eslint \"public/**/*.js\" \"public/js/**/*.js\" --fix",
+    "test": "echo \"No tests configured yet\" && exit 0"
+  },
+  "keywords": [
+    "perfume",
+    "ecommerce",
+    "fragrances"
+  ],
+  "author": "COSC341 Team 9",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}

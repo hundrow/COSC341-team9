@@ -14,27 +14,63 @@ Purpose: give a future coding agent everything needed to start implementing the 
 
 ## Current repo status — scaffolded files (what's already implemented)
 
-The following items have been scaffolded in this repository during the current session. Update or expand them as needed when implementing features.
+The repository has been refactored with a production-ready structure. All frontend assets are under `public/` for easy containerization.
 
-- `data/products.json` — sample product fixtures (6 products). Used by the Shop page for local development.
-- `src/cart.js` — small, localStorage-backed cart module exposing: loadCart, saveCart, getCart, addItem, removeItem, updateQty, clearCart, getCount. It updates the DOM element with id `cart-count` when possible.
-- `shop.html` — a lightweight Shop page that renders a product grid and includes sort control.
-- `src/shop.js` — client script that fetches `data/products.json`, renders `ProductCard`-like cards, and calls `Cart.addItem()` for quick-add.
+**Directory structure:**
 
-Notes:
-- `product.html`, `customizer.html`, and `/checkout` routes are not scaffolded yet. `shop.js` links to `product.html?slug=...` for the product detail page; you'll need to scaffold `product.html` to enable full product detail flows.
-- The cart module uses localStorage key `rf_cart_v1`. If you change key names, update references across pages.
+- `public/` — all frontend assets (served by nginx in Docker)
+  - `index.html` — homepage
+  - `pages/` — all site pages matching the site map (shop, product, cart, checkout, customizer, account, blog, about, contact, quiz)
+  - `css/styles.css` — main stylesheet
+  - `js/` — JavaScript modules
+    - `main.js` — homepage interactions
+    - `components/` — page-specific JS (cart-page.js, checkout.js, customizer.js, quiz.js)
+    - `utils/` — shared utilities (cart.js, header.js, shop.js, product.js)
+  - `data/products.json` — sample product fixtures (6 products)
+  - `assets/` — images, icons, logos
 
-How to run the Shop locally (quick):
+**Config files:**
 
-1. From project root, run a static server e.g. Python 3's http.server:
+- `.eslintrc.json` — ESLint config (eslint:recommended + custom rules)
+- `.gitignore` — prevents node_modules, dist, IDE files from being committed
+- `package.json` — npm scripts (lint, lint:fix)
+- `Dockerfile` — nginx:alpine container for frontend
+- `docker-compose.yml` — frontend service on port 8080
+- `nginx.conf` — nginx config with gzip, security headers, API proxy placeholder
+
+**Key features:**
+
+- `public/js/utils/cart.js` — localStorage cart module (key: `rf_cart_v1`) exposing: loadCart, saveCart, getCart, addItem, removeItem, updateQty, clearCart, getCount
+- `public/js/utils/header.js` — site-wide header component that adapts to page location (root vs /pages/ subdirectory)
+- All pages link correctly to each other and update cart count dynamically
+
+**Notes:**
+
+- Customizer and Quiz components are placeholders (implementation pending)
+- Checkout is stubbed (payment gateway integration TODO)
+- No backend yet — all data is client-side JSON fixtures
+- To run locally: `cd public && python -m http.server 5500` or use Docker
+- ESLint rules enforce: single quotes, semicolons, 2-space indentation
+
+**How to run locally:**
+
+1. From project root, serve the `public/` directory:
 
 ```powershell
+cd public
 python -m http.server 5500
-# open http://localhost:5500/shop.html
+# open http://localhost:5500 for homepage
+# or http://localhost:5500/pages/shop.html for shop
 ```
 
-2. The Shop page will fetch `./data/products.json` and render the grid. Quick Add will persist to localStorage and increment the header `#cart-count`.
+2. Alternative (Docker):
+
+```powershell
+docker-compose up
+# open http://localhost:8080
+```
+
+3. The Shop page will fetch `../data/products.json` and render the grid. Quick Add will persist to localStorage and increment the header cart count.
 
 ---
 
@@ -278,7 +314,7 @@ Acceptance criteria (high level):
 
 ## Developer notes and assumptions
 
-- This repository currently contains `index.html`, `main.js`, `styles.css`, and `LAB06.md`. Use those as the base if the project remains framework-less. If starting a framework (React/Vue), keep routes and components aligned to this document.
+- This repository currently contains `index.html`, `shop.html`, `product.html`, `main.js`, `styles.css`, `data/products.json`, and `LAB06.md`, plus small client scripts under `src/` (for example `src/cart.js`, `src/shop.js`, `src/product.js`, `src/header.js`). Use those as the base if the project remains framework-less. If starting a framework (React/Vue), keep routes and components aligned to this document.
 - Assume no production payment gateway yet; stub the payment step and return a mock order id. When ready, replace with a secure gateway integration.
 - For MVP, server-side APIs may be implemented as static JSON files or a simple Express server. Keep the front-end decoupled so the backend can be swapped.
 

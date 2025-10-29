@@ -32,8 +32,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   let products = [];
   try {
-    const res = await fetch('./data/products.json');
-    if (!res.ok) throw new Error('Failed to load products');
+    const res = await fetch('../data/products.json');
+    if (!res.ok) {
+      throw new Error('Failed to load products');
+    }
     products = await res.json();
   } catch (e) {
     console.error(e);
