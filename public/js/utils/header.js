@@ -11,6 +11,8 @@
 
   function createHeader() {
     const base = getBasePath();
+    // If we're already in /pages/ do not repeat the "pages/" segment when building links.
+    const pagesPrefix = window.location.pathname.includes('/pages/') ? '' : 'pages/';
     const container = document.createElement('header');
     container.className = 'site-header';
     container.setAttribute('role', 'banner');
@@ -31,11 +33,11 @@
         <nav id="primary-nav" class="primary-nav" aria-label="Primary">
           <ul>
             <li><a href="${base}index.html">Home</a></li>
-            <li><a href="${base}pages/shop.html">Shop</a></li>
-            <li><a href="${base}pages/customizer.html">Customize</a></li>
-            <li><a href="${base}pages/blog.html">Blog</a></li>
-            <li><a href="${base}pages/about.html">About</a></li>
-            <li><a href="${base}pages/contact.html">Contact</a></li>
+            <li><a href="${base}${pagesPrefix}shop.html">Shop</a></li>
+            <li><a href="${base}${pagesPrefix}customizer.html">Customize</a></li>
+            <li><a href="${base}${pagesPrefix}blog.html">Blog</a></li>
+            <li><a href="${base}${pagesPrefix}about.html">About</a></li>
+            <li><a href="${base}${pagesPrefix}contact.html">Contact</a></li>
           </ul>
         </nav>
 

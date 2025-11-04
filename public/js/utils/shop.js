@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   async function loadProducts() {
     try {
-      const res = await fetch('./data/products.json');
+  // Use an absolute path so pages served from /pages/ or root resolve consistently
+  const productsUrl = new URL('../../data/products.json', window.location.href).href;
+  const res = await fetch(productsUrl);
       if (!res.ok) {
         throw new Error('Failed to load products');
       }
