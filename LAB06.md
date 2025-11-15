@@ -488,17 +488,119 @@ graph TB
 
 ## 1. Color Schemes
 
+Below are the color schemes used in this project. Many Markdown renderers (including GitHub-flavored Markdown) allow raw HTML; the blocks below use small inline HTML/CSS swatches so you can preview the palette directly in the document. If your renderer strips styles, the fallback is the RGB/HEX text shown next to each swatch.
+
 ### a) Complementary
 `{(0, 214, 219), (158, 85, 40), (219, 84, 0), (45, 132, 134), (93, 59, 39)}`
+
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;align-items:flex-start">
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#00D6DB;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(0,214,219)<br><strong>#00D6DB</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#9E5528;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(158,85,40)<br><strong>#9E5528</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB5400;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,84,0)<br><strong>#DB5400</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#2D8486;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(45,132,134)<br><strong>#2D8486</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#5D3B27;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(93,59,39)<br><strong>#5D3B27</strong></div>
+    </div>
+</div>
+
+---
 
 ### b) Analogous
 `{(219, 116, 94), (219, 115, 0), (219, 77, 0), (219, 0, 0), (222, 221, 220)}`
 
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;align-items:flex-start">
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB745E;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,116,94)<br><strong>#DB745E</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB7300;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,115,0)<br><strong>#DB7300</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB4D00;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,77,0)<br><strong>#DB4D00</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB0000;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,0,0)<br><strong>#DB0000</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DEDDDC;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(222,221,220)<br><strong>#DEDDDC</strong></div>
+    </div>
+</div>
+
+---
+
 ### c) Monochrome
 `{(148, 137, 121), (97, 82, 60), (199, 181, 155), (51, 39, 21), (51, 34, 11)}`
 
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;align-items:flex-start">
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#948979;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(148,137,121)<br><strong>#948979</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#61523C;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(97,82,60)<br><strong>#61523C</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#C7B59B;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(199,181,155)<br><strong>#C7B59B</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#332715;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(51,39,21)<br><strong>#332715</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#33220B;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(51,34,11)<br><strong>#33220B</strong></div>
+    </div>
+</div>
+
+---
+
 ### d) Triadic
 `{(0, 75, 219), (206, 217, 182), (219, 33, 0), (134, 58, 45), (46, 62, 92)}`
+
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin:8px 0;align-items:flex-start">
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#004BDB;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(0,75,219)<br><strong>#004BDB</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#CED9B6;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(206,217,182)<br><strong>#CED9B6</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#DB2100;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(219,33,0)<br><strong>#DB2100</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#863A2D;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(134,58,45)<br><strong>#863A2D</strong></div>
+    </div>
+    <div style="text-align:center;font-size:12px;width:110px">
+        <div style="width:80px;height:80px;background:#2E3E5C;border:1px solid #ccc;margin:0 auto;border-radius:4px"></div>
+        <div style="margin-top:6px">rgb(46,62,92)<br><strong>#2E3E5C</strong></div>
+    </div>
+</div>
+
+---
 
 ## 2. Chosen Schemes
 Monochrome and Triadic
@@ -618,66 +720,6 @@ This project helped me understand how much typography affects the overall feel o
 
 ### Homepage Wireframe
 
-```mermaid
-flowchart TD
-    subgraph Header["═══ HEADER ═══"]
-        Logo["🏷️ Logo: Redolent Fragrances"]
-        Nav["📋 Nav: Home | Shop | Blog | About | Contact"]
-        Search["🔍 Search Bar"]
-        Cart["🛒 Cart Icon"]
-    end
-    
-    subgraph Hero["═══ HERO SECTION ═══"]
-        HeroImg["🖼️ Large Banner Image"]
-        Headline["✨ Discover Your Signature Scent"]
-        CTA["🔘 Shop Now Button"]
-    end
-    
-    subgraph MainContent["═══ MAIN CONTENT ═══"]
-        Featured["⭐ Featured Products Grid"]
-        P1["Product 1<br/>Image + Price"]
-        P2["Product 2<br/>Image + Price"]
-        P3["Product 3<br/>Image + Price"]
-        P4["Product 4<br/>Image + Price"]
-        
-        BestSeller["🏆 BEST SELLERS"]
-        BS1["Best Seller 1"]
-        BS2["Best Seller 2"]
-        BS3["Best Seller 3"]
-        BS4["Best Seller 4"]
-    end
-    
-    subgraph Sidebar["═══ SIDEBAR ═══"]
-        CatTitle["Categories"]
-        Cat1["🌸 Sweet"]
-        Cat2["🌶️ Spicy"]
-        Cat3["👑 Luxurious"]
-        Cat4["🍂 Seasonal"]
-        Quiz["❓ Find Your Scent Quiz"]
-    end
-    
-    subgraph Footer["═══ FOOTER ═══"]
-        Social["📱 Social Media Icons"]
-        Newsletter["✉️ Newsletter Signup"]
-        Copyright["© 2025 Redolent Fragrances"]
-    end
-    
-    Header --> Hero
-    Hero --> MainContent
-    MainContent --> Footer
-    Featured --> P1 & P2 & P3 & P4
-    BestSeller --> BS1 & BS2 & BS3 & BS4
-    CatTitle --> Cat1 & Cat2 & Cat3 & Cat4 & Quiz
-    
-    style Header fill:#61523C,stroke:#332715,color:#fff
-    style Hero fill:#C7B59B,stroke:#332715
-    style MainContent fill:#948979,stroke:#332715
-    style Sidebar fill:#948979,stroke:#332715
-    style Footer fill:#61523C,stroke:#332715,color:#fff
-    style Featured fill:#C7B59B,stroke:#332715
-    style BestSeller fill:#C7B59B,stroke:#332715
-```
-
 ### Header
 - Logo
 - Nav bar
@@ -743,11 +785,11 @@ Conventions used below
     - Button copy: Shop Now, View All, Add to Cart, Read More, Sign Up
 - Images
     - assets/images/hero/perfume-autumn-river.svg — alt: "Bottle on leaves beside river"
-    - photo-1541643600914-78b084683601.jpg (1200×1725) — alt: "Pink perfume bottle with chanel no 5 on it"
-    - photo-1613415959194-0cb09aa135f1.jpg (988×1480) — alt: "Perfume bottle on table with book and leaves"
-    - photo-1588514912908-8f5891714f8d.jpg (2669×1782) — alt: "Black perfume bottle leaning on wood chunks"
-    - photo-1622618991746-fe6004db3a47.jpg (987×1481) — alt: "Three bottles laying on yellow table with sunlight reflecting through"
-    - photo-1519669011783-4eaa95fa1b7d.jpg (979×1499) — alt: "Black background black perfume bottle"
+- https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=1200&auto=format&fit=crop - alt:”Pink perfume bottle with chanel no 5 on it”
+- https://images.unsplash.com/photo-1613415959194-0cb09aa135f1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=988 - alt:”Perfume bottle on table with book and leaves”
+- https://images.unsplash.com/photo-1588514912908-8f5891714f8d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2669 - alt:”Black perfume bottle leaning on wood chunks”
+- https://images.unsplash.com/photo-1622618991746-fe6004db3a47?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=987 - alt:”Three bottles laying on yellow table with sunlight reflecting through”
+- https://images.unsplash.com/photo-1519669011783-4eaa95fa1b7d?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=979 - alt:”Black background black perfume bottle”
     - /assets/images/products/rf-prod-amber-blossom-01.jpg — alt: "Amber Blossom eau de parfum bottle"
     - /assets/images/products/rf-prod-spice-noir-01.jpg — alt: "Spice Noir fragrance bottle"
     - /assets/images/products/rf-prod-rose-velvet-01.jpg — alt: "Rose Velvet fragrance bottle"

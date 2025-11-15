@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: .
+    ports:
+      - "8080:80"
+    container_name: redolent-frontend
+    restart: unless-stopped
+
+  # Uncomment when backend is ready
+  # backend:
+  #   image: your-backend-image
+  #   ports:
+  #     - "3000:3000"
+  #   container_name: redolent-backend
+  #   environment:
+  #     - NODE_ENV=production
+  #   restart: unless-stopped
